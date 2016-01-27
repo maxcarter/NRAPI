@@ -18,7 +18,7 @@ npm install
 1. [Configure](https://github.com/maxcarter/NRAPI/blob/master/config.js) the server to connect to your Mongo DB database.
 2. Start the ExpressJS server by running the following commands:
 ```
-node server.js
+npm start
 ```
 
 ## Development 
