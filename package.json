@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/maxcarter/NRAPI/issues"
   },
-  "homepage": "https://github.com/maxcarter/NRAPI#readme"
+  "homepage": "https://github.com/maxcarter/NRAPI#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
