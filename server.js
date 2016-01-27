@@ -11,5 +11,7 @@ mongoose.connect(config.database);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+require('./api/api')(app);
+
 app.listen(port);
 console.log("Started Node.js server. Listening on port " + config.port);
