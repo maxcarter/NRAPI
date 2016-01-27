@@ -20,3 +20,17 @@ npm install
 ```
 node server.js
 ```
+
+## Development 
+
+The [Node-Restful Documentation](https://github.com/baugarten/node-restful/blob/master/README.md) contains various details with respect to the features and functionality of the library.
+
+### Adding a new model
+
+1. Create a new model using a [Mongoose Schema](http://mongoosejs.com/docs/guide.html) and save it in `api/v1/models`.
+2. Modify `api/v1/routes/routes.js` to specify the desired HTTP requests associated with your model.
+```
+var customModel = require('../models/customModel');
+customModel.methods(['get', 'put', 'post', 'delete']);
+customModel.register(router, '/customModel');
+```
